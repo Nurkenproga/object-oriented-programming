@@ -6,7 +6,7 @@ package com.example.domain;
 
 /**
  *
- * @author alibe
+ * @author nurke
  */
 public class Employee {
 
@@ -14,6 +14,8 @@ public class Employee {
     public String name;
     public String ssn;
     public double salary;
+
+    public Employee(){};
 
     public void setEmpId(int empId) {
         this.empId = empId;
@@ -46,5 +48,5 @@ public class Employee {
     public double getSalary() {
         return salary;
     }
-    
+
 }

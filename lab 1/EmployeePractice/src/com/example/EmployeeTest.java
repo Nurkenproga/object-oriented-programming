@@ -6,10 +6,9 @@ package com.example;
 import com.example.domain.Employee;
 /**
  *
- * @author alibe
+ * @author nurke
  */
 public class EmployeeTest {
-
     /**
      * @param args the command line arguments
      */
