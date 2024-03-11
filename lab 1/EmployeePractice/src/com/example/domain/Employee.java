@@ -4,6 +4,9 @@
  */
 package com.example.domain;
 
+import java.text.NumberFormat;
+
+
 public class Employee {
 
     private int empId;
@@ -40,6 +43,16 @@ public class Employee {
     
     public void raiseSalary(double increase){
         this.salary += increase;
+    }
+    
+    @Override
+    public String toString(){
+        return "Employee ID: " + getEmpId() + "\n" + 
+                "Employee Name: " + getName() + "\n" + 
+                "Employee SSN: " + getSsn() + "\n" + 
+                "Employee Salary: " + 
+            NumberFormat.getCurrencyInstance().format(getSalary());
+        
     }
     
     
